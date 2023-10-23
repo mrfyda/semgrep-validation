@@ -1,0 +1,9 @@
+rules:
+  - id: your_pattern_id
+    patterns:
+      - pattern: exec(...)
+    message: Match found
+    languages:
+      - python
+    severity: WARNING
+
