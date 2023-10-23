@@ -12,3 +12,9 @@ jobs:
 
       - name: Run Codacy Analysis CLI
         uses: ljmf00/codacy-analysis-cli-action@if-globbing
+        with:
+          go-version: 1.19.1
+          run-gosec: "true"
+          run-staticcheck: "true"
+          clang-tidy-output: "path/to/output"
+          faux-pas-output: "path/to/output"
